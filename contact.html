@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me | John Doe Portfolio</title>
+    <meta name="description" content="Get in touch with John Doe for collaborations, freelance projects, or any inquiries. Fill out the contact form or connect via email and social media.">
+    <meta name="keywords" content="John Doe, contact, portfolio, email, freelance, web developer, projects">
+    <meta name="author" content="John Doe">
+
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:title" content="Contact Me | John Doe Portfolio">
+    <meta property="og:description" content="Reach out to John Doe for project collaborations and inquiries.">
+    <meta property="og:image" content="https://yourwebsite.com/images/contact-banner.jpg">
+    <meta property="og:url" content="https://yourwebsite.com/contact.html">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://yourwebsite.com/favicon.ico" type="image/x-icon">
+
+    <!-- Internal CSS for Styling -->
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        /* Navigation Bar */
+        header {
+            background: #222;
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #00bcd4;
+        }
+
+        /* Contact Section */
+        .contact-container {
+            max-width: 600px;
+            background: #fff;
+            padding: 30px;
+            margin: 40px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-container h1 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .contact-container p {
+            text-align: center;
+            font-size: 0.95rem;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 0.95rem;
+            outline: none;
+            transition: border 0.3s;
+        }
+
+        input:focus, textarea:focus {
+            border-color: #00bcd4;
+        }
+
+        textarea {
+            resize: none;
+            height: 120px;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 12px;
+            border: none;
+            background-color: #00bcd4;
+            color: white;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background-color: #0097a7;
+        }
+
+        /* Social Links */
+        .social-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin: 8px;
+            color: #00bcd4;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #007c91;
+        }
+
+        /* Footer */
+        footer {
+            background: #222;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 30px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html" title="Go to Home">Home</a></li>
+                <li><a href="project.html" title="View Projects">Projects</a></li>
+                <li><a href="articles.html" title="Read Articles">Articles</a></li>
+                <li><a href="contact.html" title="Contact Me">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact-container">
+        <h1>Contact Me</h1>
+        <p>Have a question, project idea, or collaboration opportunity? Feel free to reach out!</p>
+        <form action="mailto:john@example.com" method="POST" enctype="text/plain">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <!-- Social Links -->
+        <div class="social-links">
+            <a href="mailto:#">📧 Email</a>
+            <a href="#" target="_blank">🔗 LinkedIn</a>
+            <a href="#" target="_blank">💻 GitHub</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 John Doe | All Rights Reserved</p>
+    </footer>
+</body>
+</html>

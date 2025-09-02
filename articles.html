@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Articles | John Doe Portfolio</title>
+    <meta name="description" content="Read my latest articles on web development, JavaScript, HTML, CSS, and tips for building great projects.">
+    <meta name="keywords" content="John Doe, blog, articles, web development, HTML, CSS, JavaScript, projects">
+    <meta name="author" content="John Doe">
+
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:title" content="My Articles | John Doe Portfolio">
+    <meta property="og:description" content="Explore my articles on HTML, CSS, JavaScript, and web development tips.">
+    <meta property="og:image" content="https://yourwebsite.com/images/articles-banner.jpg">
+    <meta property="og:url" content="https://yourwebsite.com/articles.html">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://yourwebsite.com/favicon.ico" type="image/x-icon">
+
+    <!-- Internal CSS for Styling -->
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        /* Navigation Bar */
+        header {
+            background: #222;
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #00bcd4;
+        }
+
+        /* Articles Section */
+        .articles-container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .articles-container h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .article-card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .article-card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        .article-card p {
+            font-size: 0.95rem;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .read-more {
+            display: inline-block;
+            text-decoration: none;
+            background: #00bcd4;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            transition: background 0.3s;
+        }
+
+        .read-more:hover {
+            background: #0097a7;
+        }
+
+        /* Footer */
+        footer {
+            background: #222;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 30px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html" title="Go to Home">Home</a></li>
+                <li><a href="project.html" title="View Projects">Projects</a></li>
+                <li><a href="articles.html" title="Read Articles">Articles</a></li>
+                <li><a href="contact.html" title="Contact Me">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Articles Section -->
+    <section class="articles-container">
+        <h1>My Articles</h1>
+        <div class="articles-grid">
+            <!-- Article 1 -->
+            <div class="article-card">
+                <h2>Getting Started with HTML</h2>
+                <p>Learn the basics of HTML and how to structure your first webpage with semantic tags.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+
+            <!-- Article 2 -->
+            <div class="article-card">
+                <h2>CSS Tips for Better Design</h2>
+                <p>Discover simple CSS tricks to make your website look modern and professional.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+
+            <!-- Article 3 -->
+            <div class="article-card">
+                <h2>JavaScript Made Simple</h2>
+                <p>Understand the core JavaScript concepts every beginner should know.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+
+            <!-- Article 4 -->
+            <div class="article-card">
+                <h2>Responsive Web Design</h2>
+                <p>Learn how to build websites that look great on mobile, tablet, and desktop devices.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+
+            <!-- Article 5 -->
+            <div class="article-card">
+                <h2>How to Build a Portfolio Website</h2>
+                <p>Step-by-step guide on creating an online portfolio to showcase your skills and projects.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 John Doe | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
